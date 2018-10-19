@@ -8,29 +8,43 @@ var CompteBancaire = {
         var description = "titulaire : " + this.nom + ", solde : " + this.montant;
         return description;
     },
+    crediter: function (montant){
+        this.montant += montant; 
+    }, 
     debiter: function (montant){
         this.montant -= montant; 
     }
 }
 
-var CompteEpargne = {
-    // initialisation compte d'épargne
-    initCE: function (nom, montant, interet){
-        this.nom = nom;
-        this.montant = montant;
-        this.interet = interet;
-    },
-    decrire: function (){
-        var description = "titulaire : " + this.nom + ", solde : " + this.montant;
-        return description;
-    },
-    crediter: function (montant){
-        this.montant += montant; 
-    }, 
-    ajouterInterets: function(){
-        this.montant += this.montant*this.interet;
-    }
-}
+//var CompteEpargne = {
+//    // initialisation compte d'épargne
+//    initCE: function (nom, montant, interet){
+//        this.nom = nom;
+//        this.montant = montant;
+//        this.interet = interet;
+//    },
+//    decrire: function (){
+//        var description = "titulaire : " + this.nom + ", solde : " + this.montant;
+//        return description;
+//    },
+//    crediter: function (montant){
+//        this.montant += montant; 
+//    }, 
+//    ajouterInterets: function(){
+//        this.montant += this.montant*this.interet;
+//    }
+//}
+
+var CompteEpargne = Object.create(CompteBancaire);
+// Initialise le compte épargne
+CompteEpargne.initCE = function (titulaire, solde, Interet) {
+    this.initCB(titulaire, solde);
+    this.Interet = Interet;
+};
+// Calcule et ajoute les intérêts au solde cu compte
+CompteBancaire.ajouterInterets = function(){
+        this.montant += this.montant*this.Interet;
+};
 
 var compte1 = Object.create(CompteBancaire);
 compte1.initCB("Alex", 100);
