@@ -52,7 +52,7 @@ if(isset($_POST['Selected']) & isset($_POST['qty'])){
     require('view/cartView.php');
 }
 
-/*---empties cart if clicked on -> redirects to catalog---*
+/*---empties cart if clicked on -> redirects to catalog---*/
 if(isset($_POST['Cancel'])){
     if($_POST['Cancel']=='empty'){
         $session_cart = new Cart();
