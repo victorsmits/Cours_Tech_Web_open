@@ -1,4 +1,5 @@
 <?php
+// To set the active layer on the icon of the navbar for the current page
 if (!isset($_POST["course"])& !isset($_POST['Cart'])){
     $current = 'home';
 } else if (isset($_POST['Cart'])){
@@ -7,11 +8,15 @@ if (!isset($_POST["course"])& !isset($_POST['Cart'])){
     $current = 'other';
 }
 
+// include the title and navbar which will be always there
 require_once('view/headView.php');
 require_once('model/cartModel.php');
 require_once ('model/formation.php');
 
+/*---Construction formations of the catalog---*/
+
 $FormaPHP = new Formation(
+    1,
     'PHP',
     'Comprendre les bases de PHP',
     120,
@@ -22,6 +27,7 @@ $FormaPHP = new Formation(
 );
 
 $FormaJS = new Formation(
+    2,
     'JAVASCRIPT',
     'Comprendre les bases de JAVASCRIPT',
     100,
@@ -32,6 +38,7 @@ $FormaJS = new Formation(
 );
 
 $FormaPYTHON = new Formation(
+    3,
     'PYTHON',
     'Comprendre les bases de PYTHON',
     150,
@@ -42,6 +49,7 @@ $FormaPYTHON = new Formation(
 );
 
 $FormaJAVA = new Formation(
+    4,
     'JAVA',
     'Comprendre les bases de JAVA',
     120,
@@ -52,7 +60,8 @@ $FormaJAVA = new Formation(
 );
 
 $FormaC = new Formation(
-    'C',
+    5,
+    'PROGRAMMATION C',
     'Comprendre les bases de la programmation en C',
     170,
     'Du 15 au 20 décembre 2018',
@@ -62,6 +71,7 @@ $FormaC = new Formation(
 );
 
 $FormaCSHARP = new Formation(
+    6,
     'C#',
     'Comprendre les bases de CSHARP',
     150,
@@ -71,4 +81,5 @@ $FormaCSHARP = new Formation(
     'Anonymous'
 );
 
+/*---Regrouping all the formation of the catalog in one array---*/
 $instances = get_instances_of_class('Formation');

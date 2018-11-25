@@ -2,6 +2,7 @@
 class Formation
 {
     // initialization variables
+    public $id;
     public $title;
     public $obj;
     public $price;
@@ -9,9 +10,11 @@ class Formation
     public $image;
     public $caption;
     public $captionWriter;
+    public $quantity;
     
-    public function __construct($atitle,$adesc,$aprice,$atime,$aimage,$acaption,$acaptionWriter)
+    public function __construct($aId,$atitle,$adesc,$aprice,$atime,$aimage,$acaption,$acaptionWriter)
     {
+        $this->Id = $aId;
         $this->Title = $atitle;
         $this->Obj = $adesc;
         $this->Price = $aprice;
@@ -22,7 +25,7 @@ class Formation
     }
 }
 
-// Array of all the objects constructed from the same class
+/*--- Array of all the objects constructed from the same class ---*
 function get_instances_of_class($class) {
     $instances = array();
 

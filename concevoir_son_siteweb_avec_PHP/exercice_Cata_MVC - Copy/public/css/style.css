@@ -103,3 +103,15 @@ footer {
 .form-group {
     text-align: left;
 }
+
+.subtotal {
+    color: darkred;
+}
+
+.selectpicker {
+    max-width: 100px;
+}
+
+.formslt {
+    margin-bottom:-1em;
+}

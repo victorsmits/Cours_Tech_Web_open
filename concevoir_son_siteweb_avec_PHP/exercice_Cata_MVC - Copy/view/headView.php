@@ -1,3 +1,4 @@
+<!-->HTML</!-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,12 +17,16 @@
     </head>
 <body>
 
+<!-->Title Store</!-->
+
 <div class="jumbotron">
   <div class="container text-center">
     <h1>Online Store</h1>      
     <p>Change is the end result of all true learning.</p>
   </div>
 </div>
+
+<!-->Menu</!-->
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">

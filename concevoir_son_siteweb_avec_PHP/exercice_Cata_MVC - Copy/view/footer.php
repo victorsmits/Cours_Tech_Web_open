@@ -1,5 +1,6 @@
+<!-->Footer</!-->
 <footer class="container-fluid text-center">
-    <p>Online Store Copyright</p>  
+    <p>Online Store Copyright by Harold</p>  
 <!--
     <form class="form-inline">Get deals:
         <input type="email" class="form-control" size="50" placeholder="Email Address">

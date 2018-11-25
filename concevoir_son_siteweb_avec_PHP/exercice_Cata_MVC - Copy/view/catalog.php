@@ -1,3 +1,4 @@
+<!-->Catalog</!-->
 <?php 
 for($i=0;$i < count($instances); $i++){
     $elem = $instances[$i];
@@ -25,7 +26,7 @@ for($i=0;$i < count($instances); $i++){
                         <div class="panel-heading"><?php echo $elemArr['Title']?></div>
                             <div class="panel-body">
                                 <form method="post">
-                                    <button id="close-image" name="course" value="<?php echo $elemArr['Title']?>"> 
+                                    <button id="close-image" name="course" value="<?php echo $elemArr['Id']?>"> 
                                     <?php
                                     $filepath= $elemArr['Image'];
                                     echo '<img src="'.$filepath.'" class="img-responsive" style="width:100%" alt="Image">'
@@ -47,7 +48,7 @@ for($i=0;$i < count($instances); $i++){
                         <div class="panel-heading"><?php echo $elemArr['Title']?></div>
                             <div class="panel-body">
                                 <form method="post">
-                                    <button id="close-image" name="course" value="<?php echo $elemArr['Title']?>"> 
+                                    <button id="close-image" name="course" value="<?php echo $elemArr['Id']?>"> 
                                     <?php
                                     $filepath= $elemArr['Image'];
                                     echo '<img src="'.$filepath.'" class="img-responsive" style="width:100%" alt="Image">'
@@ -70,7 +71,7 @@ for($i=0;$i < count($instances); $i++){
                     <div class="panel-heading"><?php echo $elemArr['Title']?></div>
                         <div class="panel-body">
                             <form method="post">
-                                <button id="close-image" name="course" value="<?php echo $elemArr['Title']?>"> 
+                                <button id="close-image" name="course" value="<?php echo $elemArr['Id']?>"> 
                                 <?php
                                 $filepath= $elemArr['Image'];
                                 echo '<img src="'.$filepath.'" class="img-responsive" style="width:100%" alt="Image">'
