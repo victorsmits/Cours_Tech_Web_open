@@ -1,0 +1,105 @@
+html {
+    text-align: center;
+}
+
+/*----------Header----------*/
+
+/*----------Navbar----------*/
+
+.navbar-brand {
+    background-size : contain;
+    background-image: url("../images/formation.jfif");    
+}
+
+/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+.navbar {
+  margin-bottom: 50px;
+  border-radius: 0;
+}
+
+/* Remove the jumbotron's default bottom margin */ 
+ .jumbotron {
+  margin-bottom: 0;
+}
+
+.navbutton {
+    height: 50px;
+    margin-top: unset;
+    background: none;
+    color: #9d9d9d;
+    border-radius: unset;
+}
+
+.active {
+    background-color: #1a1717;
+    color:white;
+}
+
+.navbutton:hover {
+    color:white;
+}
+
+.navform {
+    margin-bottom: unset;
+    margin-top: unset;
+}
+
+/*----------Catalog-container----------*/
+
+#close-image {
+    display: inline-block;
+    height: 170px;  
+    width: 100%;
+    border: none;
+    max-width: 260px;
+}
+
+#close-image img{
+    height: inherit;
+    max-height: 165px;
+}
+
+/*----------Footer----------*/
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+/*----------formationView----------*/
+.imageView {
+    width: auto;
+    max-height: 150px;
+}
+
+.blockquote-footer {
+    height: 2em;
+    padding-top: 0.5em;
+}
+
+.caption blockquote p {
+    font-size: 90%
+}
+
+.buybutton {
+    max-width: 260px;
+    display: inline-block;
+    width: 15em;
+}
+
+/*----------CartView----------*/
+.tbody-cart td {
+    text-align: left;
+}
+
+.tableCart {
+    width: 80%;
+}
+
+.PP1:hover{
+    background-color: #a29b9b;
+}
+
+.form-group {
+    text-align: left;
+}
